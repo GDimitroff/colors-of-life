@@ -94,14 +94,14 @@ body {
 }
 
 /*******************************/
-/* SECTION HERO */
+/* HERO SECTION */
 /*******************************/
 
 .section-hero {
     background-color: #1f2937;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 6.4rem;
     padding: 8rem 40rem 12rem 40rem;
 }
@@ -115,7 +115,6 @@ body {
     font-weight: 900;
     color: #f9faf8;
     margin-bottom: 1.2rem;
-    line-height: 1.2;
 }
 
 .hero-text {
@@ -128,24 +127,84 @@ body {
 .hero-img {
     flex-basis: 50%;
     height: 28rem;
-    box-shadow: #d97706c4 0px 1px 18px -8px;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-img img {
-    border-radius: 0.8rem;
+    border-radius: 0.3rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: bottom;
+    margin-bottom: 1.2rem;
+    border: 6px solid #fff;
+}
+
+.hero-img p {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #e5e7eb;
 }
 
 .button {
     padding: 0.8rem 3.2rem;
-    border-radius: 0.6rem;
+    border-radius: 0.3rem;
     border: none;
     cursor: pointer;
     background-color: #d97706;
     color: #fff;
     font-size: 1.6rem;
     font-weight: 700;
+}
+
+/*******************************/
+/* FEATURED SECTION */
+/*******************************/
+
+.featured-heading {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: #1f2937;
+    margin: 4.8rem auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 6.4rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    margin-bottom: 9.6rem;
+}
+
+.card-img {
+    margin-bottom: 1.2rem;
+}
+
+.card-img img {
+    display: block;
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    border: 8px solid #1f2937;
+    border-radius: 0.3rem;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #1f2937;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+}
+
+.card-author {
+    font-size: 1.4rem;
+    text-align: center;
 }
