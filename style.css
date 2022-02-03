@@ -1,37 +1,6 @@
-/* 
-  --- 01 TYPOGRAPHY SYSTEM
-  - Font size system (px)
-  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
- 
-  - Line height:
-  Default: 1
-  Small: 1.05
-  Medium: 1.2
-  Paragraph default: 1.6
-  Large: 1.8
-
-  - Letter spacing:
-  -0.5px
-  0.75px
-
-  --- 02 COLORS
-  - Primary: #1f2937
-  - Tints: #e2e8f0
-  - Greys: #555
-
-  --- 05 SHADOWS
-  0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-
-  --- 06 BORDER-RADIUS
-  Default: 9px
-  Medium: 11px
-
-  --- 07 WHITESPACE
-  - Spacing system (px)
-  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
-
-* {
+*,
+*::after,
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -39,6 +8,8 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 12rem; 
 }
 
 body {
@@ -58,6 +29,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0.8rem 40rem;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -67,7 +40,7 @@ body {
 }
 
 .logo img {
-    max-width: 6.4rem;
+    max-width: 4.8rem;
     width: 100%;
 }
 
@@ -137,8 +110,9 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: bottom;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.8rem;
     border: 6px solid #f9faf8;
+    box-shadow: #f9faf8 0px 8px 30px -10px;
 }
 
 .hero-img p {
@@ -162,12 +136,16 @@ body {
 /* FEATURED SECTION */
 /*******************************/
 
+.section-featured {
+    margin: 6.4rem auto 9.2rem auto;
+}
+
 .featured-heading {
     text-align: center;
     font-size: 3.6rem;
     font-weight: 900;
     color: #1f2937;
-    margin: 4.8rem auto;
+    margin-bottom: 4.8rem;
 }
 
 .cards {
@@ -180,11 +158,11 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 20rem;
-    margin-bottom: 9.6rem;
 }
 
 .card-img {
     margin-bottom: 1.2rem;
+    box-shadow: #1f2937 0px 20px 30px -10px;
 }
 
 .card-img img {
@@ -264,6 +242,7 @@ blockquote {
 .cta-heading {
     font-size: 2.4rem;
     margin-bottom: 0.8rem;
+    font-weight: 900;
 }
 
 .cta-text {
@@ -288,5 +267,5 @@ blockquote {
     text-align: center;
     color: #e5e7eb;
     font-size: 1.8rem;
-    padding: 4.8rem 0;
+    padding: 3.6rem 0;
 }
