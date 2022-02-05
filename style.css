@@ -8,7 +8,6 @@
 
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
     scroll-padding-top: 10rem;
 }
 
@@ -39,6 +38,7 @@ body {
     display: flex;
     align-items: center;
     gap: 2rem;
+    text-decoration: none;
 }
 
 .logo img {
@@ -377,7 +377,7 @@ blockquote {
     .main-nav ul {
         gap: 1.4rem;
     }
-    
+
     .cta-content {
         padding: 6rem 3rem;
     }
