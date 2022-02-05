@@ -31,7 +31,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 20vw;
+    height: 8rem;
+    padding: 0 20vw;
 }
 
 .logo {
@@ -298,7 +299,7 @@ blockquote {
 
 @media (max-width: 84em) {
     .header {
-        padding: 1rem 10vw;
+        padding: 0 10vw;
     }
 
     .section-hero {
@@ -370,6 +371,26 @@ blockquote {
 /************************************/
 
 @media (max-width: 34em) {
+    .header {
+        padding: 0 5vw;
+    }
+
+    .section-hero {
+        padding: 10rem 10vw;
+    }
+
+    .section-featured {
+        margin: 6.4rem 5vw 9.2rem 5vw;
+    }
+
+    .section-quote {
+        padding: 8rem 15vw;
+    }
+
+    .section-cta {
+        padding: 8rem 10vw;
+    }
+
     .logo {
         gap: 0.5rem;
     }
@@ -379,6 +400,16 @@ blockquote {
     }
 
     .cta-content {
-        padding: 6rem 3rem;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        margin-top: 1.2rem;
+    }
+
+    .cta-button button {
+        width: 100%;
     }
 }
